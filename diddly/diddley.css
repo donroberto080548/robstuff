@@ -1,0 +1,7 @@
+
+body { color: #000; background-color: white }
+td { color: #000; font-size: small; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif }
+a { color: #c00; text-decoration: none }
+a:link { color: #c00 }
+a:visited { color: #c00 }
+a:hover { color: #06c; text-decoration: underline }

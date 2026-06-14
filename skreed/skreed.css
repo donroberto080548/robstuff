@@ -1,0 +1,7 @@
+
+a { color: #4b7d8c; font-weight: bold; text-decoration: none }
+a:hover { color: #a99fe6; text-decoration: none; background-color: #000 }
+.bylineclass { font-size: smaller; font-family: Verdana, Arial, Helvetica, sans-serif }
+.menutext { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold }
+.quotebigclass { color: #b22222; font-size: larger; font-style: normal; font-weight: normal }
+.sidebarclass    { font-size: 10px; font-family: Verdana, Arial, Helvetica, Swiss }

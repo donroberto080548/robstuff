@@ -1,0 +1,69 @@
+body     {
+	color: #33747e;
+	font-family: 'Ubuntu Condensed', Arial, Helvetica, Verdana, Swiss, sans-serif;
+	font-size: 100%;
+}
+td { font-size: 16px }
+h1     {
+	color: #745998;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	margin: 0px;
+	text-transform: uppercase;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+h2 {
+	font-weight: bold;
+	color: #745998;
+	font-size: 1.1em;
+}
+h3 {
+	font-weight: bold;
+	color: #745998;
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+#header {
+	background-color: #dcdcdc;
+	text-align: right;
+	vertical-align: middle;
+	padding-right: 15px;
+}
+#sidebarTd {
+	width: 200px;
+}
+#sidebarContent {
+	font-size: 0.94em;
+}
+
+
+
+
+a:link, a:visited     { color: #801327; text-decoration: none }
+a:hover       { color: #6a5acd; text-decoration: underline }
+.altlink { font-size: smaller }
+.altlink a:link { color: #801327 }
+.altlink a:hover { color: #6a5acd; text-decoration: underline }
+.alignRt {
+	float: right;
+	margin-left: 15px;
+}
+.alignLt {
+	float: left;
+	margin-right: 15px;
+}
+
+.sectionhead { color: #696969; font-weight: bold }
+.lineright {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #dcdcdc;
+}
+.smalltext {
+	font-size: 12px;
+}

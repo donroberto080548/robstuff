@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="movie.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p><script type='text/javascript' src='swfobject.js'></script>
+
+<div id='mediaspace' align="center">Flash required to play this video</div>
+
+<script type='text/javascript'>
+  var so = new SWFObject('player.swf','ply','640','345','9','#000000');
+  so.addParam('allowfullscreen','true');
+  so.addParam('allowscriptaccess','always');
+  so.addParam('wmode','opaque');
+  so.addVariable('autostart','false');
+  so.addVariable('backcolor','333333');
+  so.addVariable('file','hennes.m4v&image=../media/TLC_trailer01.jpg');
+  so.write('mediaspace');
+</script>
+</p>
+</body>
+</html>

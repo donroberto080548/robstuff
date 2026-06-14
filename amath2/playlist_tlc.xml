@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="0" xmlns = "http://xspf.org/ns/0/">
+<title>Tender Loving Care</title>
+  <trackList>
+   <track>
+    <location>media/tlc/01.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>The Nimble Hippo</annotation>
+   </track>
+   <track>
+    <location>media/tlc/02.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Theme From TLC</annotation>
+   </track>
+   <track>
+    <location>media/tlc/03.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Rorschact</annotation>
+   </track>
+   
+    <track>
+    <location>media/tlc/04.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Awakening</annotation>
+   </track>
+   <track>
+    <location>media/tlc/05.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>New Age Piano</annotation>
+   </track>
+   <track>
+    <location>media/tlc/06.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Jazzy</annotation>
+   </track>
+   
+    <track>
+    <location>media/tlc/07.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Michael's Confession</annotation>
+   </track>
+   <track>
+    <location>media/tlc/08.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Angel Of Mercy</annotation>
+   </track>
+   <track>
+    <location>media/tlc/09.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Jody Nemo</annotation>
+   </track>
+   <track>
+    <location>media/tlc/10.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Old Guitar</annotation>
+   </track>
+   <track>
+    <location>media/tlc/11.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Nightclub</annotation>
+   </track>
+   <track>
+    <location>media/tlc/12.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Discovery</annotation>
+   </track>
+   <track>
+    <location>media/tlc/13.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Sparky</annotation>
+   </track>
+      <track>
+    <location>media/tlc/14.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Reality Check</annotation>
+   </track>
+      <track>
+    <location>media/tlc/15.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Vista Grande</annotation>
+   </track>
+      <track>
+    <location>media/tlc/16.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Daddy</annotation>
+   </track>
+      <track>
+    <location>media/tlc/17.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Cracked Doll</annotation>
+   </track>
+      <track>
+    <location>media/tlc/18.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Murder</annotation>
+   </track>
+      <track>
+    <location>media/tlc/19.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Kathryn's Funeral</annotation>
+   </track>
+      <track>
+    <location>media/tlc/20.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Mondolins</annotation>
+   </track>
+      <track>
+    <location>media/tlc/21.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>Angel Of Death</annotation>
+   </track>
+      <track>
+    <location>media/tlc/22.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>The Journey</annotation>
+   </track>
+      <track>
+    <location>media/tlc/23.mp3</location>
+    <image>images/tlc_audio.jpg</image>
+    <annotation>French Cafe</annotation>
+   </track>
+
+  </trackList>
+</playlist>
+<xml>
+</xml>

@@ -1,0 +1,9 @@
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="../home.html" target="_top" onclick="MM_nbGroup('down','group1','nav02','../images/nav_02-down.jpg',0)" onmouseover="MM_nbGroup('over','nav02','../images/nav_02-over.jpg','',0)" onmouseout="MM_nbGroup('out')"><img src="../images/nav_02.jpg" alt="" name="nav02" width="130" height="60" border="0" id="nav02" onload="" /></a></td>
+    <td><a href="../how_to_play.html" target="_top" onclick="MM_nbGroup('down','group1','nav03','../images/nav_03-down.jpg',0)" onmouseover="MM_nbGroup('over','nav03','../images/nav_03-over.jpg','',0)" onmouseout="MM_nbGroup('out')"><img src="../images/nav_03.jpg" alt="" name="nav03" width="190" height="60" border="0" id="nav03" onload="" /></a></td>
+    <td><a href="../buy_diddley.html" target="_top" onclick="MM_nbGroup('down','group1','nav04','../images/nav_04-down.jpg',0)" onmouseover="MM_nbGroup('over','nav04','../images/nav_04-over.jpg','',0)" onmouseout="MM_nbGroup('out')"><img src="../images/nav_04.jpg" alt="" name="nav04" width="160" height="60" border="0" id="nav04" onload="" /></a></td>
+    <td><a href="../about_us.html" target="_top" onclick="MM_nbGroup('down','group1','nav05','../images/nav_05-down.jpg',0)" onmouseover="MM_nbGroup('over','nav05','../images/nav_05-over.jpg','',0)" onmouseout="MM_nbGroup('out')"><img src="../images/nav_05.jpg" alt="" name="nav05" width="160" height="60" border="0" id="nav05" onload="" /></a></td>
+  </tr>
+</table>
+

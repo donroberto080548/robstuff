@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slideshow version="4" name="web_samples" origTemplateName="Thumbnail Navigation / Classic (Large Thumbnails)">
+  <htmlTemplateMetaData note="THESE PARAMETER VALUES ARE FOR TEMPLATING ONLY; YOU MUST UPDATE THEM IN YOUR HTML PAGE FOR THEM TO SHOW UP PROPERLY!" p_backgroundColor="#CCCCCC" p_level="a" p_preloaderTextColor="#FFFFFF" p_height="600" p_backgroundAlpha="0.5" p_preloaderColor="#FFFFFF" p_width="600" p_touchMode="inline" p_touchBackgroundAlpha="0.5"/>
+  <styles>
+    <ImagesStandardTransition effectType="FadeStandard"/>
+    <IndividualSlide/>
+    <Thumb opacity="0.72"/>
+    <ThumbHover opacity="1"/>
+    <ThumbSelected opacity="1"/>
+  </styles>
+  <effects/>
+  <ui>
+    <views>
+      <view id="standardView" initial="true" label="Main view" designTimeSelected="true">
+        <ImagesStandard left="0" right="0" top="0" bottom="0"/>
+        <HoverCanvas left="0" right="0" top="0">
+          <GalleryBar left="0" right="0" top="0" visible="Eval{import com.dwuser.ss4.managers.ImageManager; return (ImageManager.multipleGalleriesExist)}"/>
+          <PlayPauseButton right="5" top="5"/>
+        </HoverCanvas>
+        <HoverCanvas left="0" right="0" bottom="0" height="100" backgroundColor="#000000" backgroundAlpha="0.8" cornerRadius="0" borderStyle="solid" borderThickness="0">
+          <Thumbnails width="200" height="80" x="1" y="279" bottom="10" left="10" right="10" pagingStyle="scrollbarBottom" disableAutoplayOnClick="false" tileWidth="60" tileHeight="45" horizontalGap="30"/>
+        </HoverCanvas>
+      </view>
+      <view type="overlay" id="overlayView1">
+        <VBox verticalAlign="middle" horizontalAlign="center" width="100%" height="100%">
+          <SingleLoader/>
+          <GroupLoader/>
+        </VBox>
+      </view>
+    </views>
+  </ui>
+  <kenburns/>
+  <galleries autoplay="true" autoplayDelay="6000" autoplayLoop="true">
+    <gallery title="New Gallery" description="" fullPathPrefix="gallery_web/">
+      <img src="wiz.jpg"/>
+      <img src="ucc.jpg"/>
+	  <img src="tbyte.jpg"/>
+      <img src="sohs.jpg"/>
+      <img src="so.jpg"/>
+      <img src="slm.jpg"/>
+      <img src="sl.jpg"/>
+      <img src="skyhouse.jpg"/>
+      <img src="sh.jpg"/>
+      <img src="pov.jpg"/>
+      <img src="nwv.jpg"/>
+      <img src="nhg.jpg"/>
+      <img src="nawic.jpg"/>
+      <img src="mt.jpg"/>
+      <img src="mri.jpg"/>
+      <img src="mobius.jpg"/>
+      <img src="ml.jpg"/>
+      <img src="lld.jpg"/>
+      <img src="lca.jpg"/>
+      <img src="landd.jpg"/>
+      <img src="kc.jpg"/>
+      <img src="jt.jpg"/>
+      <img src="jmc.jpg"/>
+      <img src="jg.jpg"/>
+      <img src="fotas.jpg"/>
+      <img src="ds.jpg"/>
+      <img src="dodero.jpg"/>
+      <img src="cyra.jpg"/>
+      <img src="collector.jpg"/>
+      <img src="bf.jpg"/>
+      <img src="bb.jpg"/>
+      <img src="alc.jpg"/>
+      <img src="al.jpg"/>
+      <img src="afhs.jpg"/>
+      <img src="aacf.jpg"/>
+    </gallery>
+  </galleries>
+</slideshow>

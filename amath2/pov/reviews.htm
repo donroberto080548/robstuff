@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>POV</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+		<csscriptdict>
+			<script><!--
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button',/*URL*/'images/screenshots-u.gif',/*URL*/'images/screenshots-d.gif',/*URL*/'','');
+
+// --></script>
+		</csactiondict>
+	</head>
+
+
+<body bgcolor="#000000" text="#CCCCCC" link="red" vlink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="CSScriptInit();MM_preloadImages('images/home_d.gif','images/trailer_d.gif','images/buzz_d.gif','images/buy_d.gif','images/jane_d.gif','images/peter_d.gif','images/edwards_d.gif','images/frank_d.gif','images/about_dc_d.gif','images/reviews_d.gif','images/about_tlc_d.gif')">
+
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="147"><img src="images/logo.gif" width="147" height="93"></td>
+    <td width="421">&nbsp;</td>
+    <td width="232" valign="bottom">
+      <div align="right"><img src="images/cast.jpg" width="232" height="54"></div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF"> 
+    <td colspan="3" height="1"><img src="images/line.gif" width="800" height="1"></td>
+  </tr>
+  <tr> 
+    <td colspan="3">
+      <table width="800" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="50"><a href="main.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/home_d.gif',1)"><img src="images/home_up.gif" width="41" height="17" border="0" name="Image1" alt="Home"></a></td>
+          <td width="60">
+            <div align="center"><a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/trailer_d.gif',1)" onClick="MM_openBrWindow('pov_trailer.htm','trailer','width=300,height=300')"><img src="images/trailer.gif" width="53" height="17" border="0" name="Image2"></a></div>
+          </td>
+          <td width="50">
+            <div align="center"><a href="buzz.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/buzz_d.gif',1)"><img src="images/buzz_u.gif" width="38" height="17" border="0" name="Image3"></a></div>
+          </td>
+          <td width="50">
+            <div align="center"><a href="http://www.aftermathmedia.com/store.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/buy_d.gif',1)" target="new"><img src="images/buy_u.gif" width="36" height="17" border="0" name="Image4"></a></div>
+          </td>
+          <td width="340">&nbsp;</td>
+          <td width="60"> 
+            <div align="center"><a href="jane.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/jane_d.gif',1)"><img src="images/jane_u.gif" width="30" height="17" border="0" name="Image5"></a></div>
+          </td>
+          <td width="60"> 
+            <div align="center"><a href="peter.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/peter_d.gif',1)"><img src="images/peter_u.gif" width="38" height="17" border="0" name="Image6"></a></div>
+          </td>
+          <td width="70"> 
+            <div align="center"><a href="edwards.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/edwards_d.gif',1)"><img src="images/edwards_u.gif" width="54" height="17" border="0" name="Image7"></a></div>
+          </td>
+          <td width="60"> 
+            <div align="center"><a href="frank.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/frank_d.gif',1)"><img src="images/frank_u.gif" width="38" height="17" border="0" name="Image8"></a></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+   <tr bgcolor="#FFFFFF"> 
+    <td colspan="3" height="1"><img src="images/line.gif" width="800" height="1"></td>
+  </tr>
+  <tr> 
+    <td colspan="3">
+	  <table width="800" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td background="images/p_bg.jpg" width="135" height="350" valign="top"> 
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="images/pixel.gif" width="135" height="10"></td>
+              </tr>
+			    <tr>
+                <td><a href="about_dc.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','images/about_dc_d.gif',1)"><img src="images/about_dc_u.gif" width="135" height="20" border="0" name="Image9"></a></td>
+              </tr>
+              <tr>
+                <td><a href="reviews.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','images/reviews_d.gif',1)"><img src="images/reviews_u.gif" width="135" height="20" border="0" name="Image10"></a></td>
+              </tr>
+									<tr>
+										<td><csobj w="135" h="20" t="Button" ht="images/screenshots-d.gif"><a href="press/graphics/index.html" target="_blank" onmouseover="return CSIShow(/*CMP*/'button',1)" onmouseout="return CSIShow(/*CMP*/'button',0)" onclick="return CSButtonReturn()"><img src="images/screenshots-u.gif" width="135" height="20" name="button" border="0"></a></csobj></td>
+									</tr>
+									<tr>
+                <td><a href="about_tlc.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','images/about_tlc_d.gif',1)"><img src="images/about_tlc_u.gif" width="135" height="20" border="0" name="Image11"></a></td>
+              </tr>
+            </table>
+           
+         
+          </td>
+          <td background="images/jane_bg.jpg" width="665" height="350" valign="top"><br>
+            <table border="0" cellspacing="4" cellpadding="4" width="100%">
+              <tr>
+										<td>
+											<div align="left">
+												<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">&quot;...the initial viewing is amazing. Because you think you are controlling the story, the ambiguities and erotic impulses of the characters seem to be a reflection of your own desires and tastes, and as you try to solve the mystery of the heroine's background and the dangers surrounding her, you feel like you've never been this close to a movie character before in your life.&quot;</font></div>
+											<div align="right">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>- Pratt DVD Newsletter</b></font></p>
+											</div>
+											<div align="left">
+												<font size="2">
+												&quot;</font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">Point of View is an outstanding, innovative contribution to the DVD medium that this reviewer is honoured to have in his DVD collection and fully recommends to any mature person who likes to think and interact with intelligent movies.&quot;</font><font size="2"> </font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><a href="http://anthonylarme.tripod.com/pov/povreview.html" target="_blank">read full review</a> <a href="http://anthonylarme.tripod.com/pov/index.html" target="_blank">visit PoV fansite</a></font></div>
+											<div align="right">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>- Anthony Larme</b></font></p>
+											</div>
+											<div align="left">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">&quot;...most of the story unfolds through dazzling visuals with a great musical score&#x2026;I thought this was very erotic. I'd see it again&quot;</font></p>
+												<div align="right">
+													<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>- The Movie Chicks, Dallas</b></font></p>
+												</div>
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">&quot;...I was surprised with how smoother and more immersive this release is, a true step above and beyond all other interactive films, to be sure... I don't think we'll ever reach a seamless brand of interactive picture, but PoV plays like a high end video game drama, but much more immersive, I think. The choices are much more subtle in PoV, not the overly simple stuff we've seen before, which adds a lot to the experience also. The options here adapt to your reactions, which is like a new twist also, very cool indeed. I know these kind of releases have a special audience, but even those who've disliked prior interactive movies should give PoV a spin, as it is the finest example of the concept thus far, in my opinion.&quot; <a href="http://www.dvdauthority.com/pov.htm" target="_blank">read full review</a></font></p>
+											</div>
+											<div align="right">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>- DVD Authority</b></font></p>
+											</div>
+											<div align="left">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">&quot;I just recieved my copy of POV and it was one of the most interactive games I have played. I actuallly felt the drama of being in the story line. It is a great game, keep sending us more. It tied with TLC for BEST game ever made in my book.&quot;</font></p>
+											</div>
+											<div align="right">
+												<div align="right">
+													<p><font size="2">- </font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>Jeff Lacy</b></font></p>
+												</div>
+											</div>
+											<div align="left">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">&quot;...let me give a plug for Canadian actress Stefanie Von Pfetten. She plays the lead in 'POV' Jane...Von Pfetten does wonders with the role. She creates a complex, completely believable portrait of a woman facing a psychological meltdown. This is one of the best, lived-in performances that I have ever seen from anyone. The quality of her acting is all the more surprising and impressive because &quot;POV&quot; was shot in two weeks.... Stefanie Von Pfetten deserves to be a star. She's that good.&quot; <a href="http://www.dvdtown.com/reviewspec.asp?reviewid=676" target="_blank">read full review</a></font></p>
+											</div>
+											<div align="right">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>- DVD Town</b></font></p>
+											</div>
+											<div align="left">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">&quot;Interactive Movies are a rare bird these days and this is one is the best I've ever played. The interaction is fun and easy, the story full and well developed and characters I really liked and cared about. Very adult and mature gameplay that is even better than watching a movie. I hope more interactive movies of this quality enter the market, DVD technology fixes all the FMV problems that plagued the interactive movies of the early 90's.&quot;</font></p>
+											</div>
+											<div align="right">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>- Mike Kelly</b></font></p>
+											</div>
+											<div align="left">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">&quot;As a prediction, I am sure we will see lots of the two main characters, Jane and Frank, in the future. These two young stars really portray their characters convincingly. You will need to see the film to see what I mean. For those that have experienced TLC before, you will not be disappointed with 'Point of View'. With a smart and intense thriller, performed by some great new talent, you really cannot go wrong. It just makes you wonder what the team will think of next to capitalise on this effort. With DVD technology constantly evolving in today's market I can see the interactive movie becoming the way of the future.&quot;</font></p>
+											</div>
+											<div align="right">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>- Russell Milne</b></font></p>
+											</div>
+										</td>
+									</tr>
+            </table>
+          </td>
+  </tr>
+</table>
+	</td>
+  </tr>  
+  <tr bgcolor="#FFFFFF"> 
+    <td colspan="3" height="1">
+      <div align="left"><img src="images/line.gif" width="800" height="1"></div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

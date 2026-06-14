@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta name="generator" content="Adobe GoLive" />
+		<title>Diddley - How to Play</title>
+		<link href="images/favicon.ico" rel="shortcut icon" />
+		<link href="diddley.css" rel="stylesheet" type="text/css" media="all" />
+		
+	    <script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+function openPictureWindow_Fever(imageType,imageName,imageWidth,imageHeight,alt,posLeft,posTop) {  // v4.01
+	newWindow = window.open("","newWindow","width="+imageWidth+",height="+imageHeight+",scrollbars=no,left="+posLeft+",top="+posTop);
+	newWindow.document.open();
+	newWindow.document.write('<html><title>'+alt+'</title><body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" onBlur="self.close()">'); 
+	if (imageType == "swf"){
+	newWindow.document.write('<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0\" width=\"'+imageWidth+'\" height=\"'+imageHeight+'\">');
+	newWindow.document.write('<param name=movie value=\"'+imageName+'\"><param name=quality value=high>');
+	newWindow.document.write('<embed src=\"'+imageName+'\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"'+imageWidth+'\" height=\"'+imageHeight+'\">');
+	newWindow.document.write('</embed></object>');	}else{
+	newWindow.document.write('<img src=\"'+imageName+'\" width='+imageWidth+' height='+imageHeight+' alt=\"'+alt+'\">'); 	}
+	newWindow.document.write('</body></html>');
+	newWindow.document.close();
+	newWindow.focus();
+}
+//-->
+</script>
+</head>
+
+	<body bgcolor="#ffffff">
+		<div align="center">
+			<table width="640" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td><!-- #BeginLibraryItem "/Library/banner.lbi" --><p><a title="Go to Diddley Home Page" href="home.html"><img src="images/nav_01.jpg" alt="Go to Diddley Home Page" height="200" width="640" border="0"></a></p>
+<!-- #EndLibraryItem --></td>
+			  </tr>
+				<tr>
+					<td><!-- #BeginLibraryItem "/Library/nav.lbi" --><table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="home.html" target="_top" onclick="MM_nbGroup('down','group1','nav02','images/nav_02-down.jpg',0)" onmouseover="MM_nbGroup('over','nav02','images/nav_02-over.jpg','',0)" onmouseout="MM_nbGroup('out')"><img src="images/nav_02.jpg" alt="" name="nav02" width="130" height="60" border="0" id="nav02" onload="" /></a></td>
+    <td><a href="how_to_play.html" target="_top" onclick="MM_nbGroup('down','group1','nav03','images/nav_03-down.jpg',0)" onmouseover="MM_nbGroup('over','nav03','images/nav_03-over.jpg','',0)" onmouseout="MM_nbGroup('out')"><img src="images/nav_03.jpg" alt="" name="nav03" width="190" height="60" border="0" id="nav03" onload="" /></a></td>
+    <td><a href="buy_diddley.html" target="_top" onclick="MM_nbGroup('down','group1','nav04','images/nav_04-down.jpg',0)" onmouseover="MM_nbGroup('over','nav04','images/nav_04-over.jpg','',0)" onmouseout="MM_nbGroup('out')"><img src="images/nav_04.jpg" alt="" name="nav04" width="160" height="60" border="0" id="nav04" onload="" /></a></td>
+    <td><a href="about_us.html" target="_top" onclick="MM_nbGroup('down','group1','nav05','images/nav_05-down.jpg',0)" onmouseover="MM_nbGroup('over','nav05','images/nav_05-over.jpg','',0)" onmouseout="MM_nbGroup('out')"><img src="images/nav_05.jpg" alt="" name="nav05" width="160" height="60" border="0" id="nav05" onload="" /></a></td>
+  </tr>
+</table>
+
+<!-- #EndLibraryItem --></td>
+			  </tr>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="0" cellpadding="10">
+							<tr>
+								<td>
+									<div align="left">
+									  <p>The object of the game is to reveal the words that are concealed under a matrix of Tiles and then solve the Puzzle that the words suggest by typing in the answer before one's opponent. These are called Theme Puzzles, because all the words in the matrix share a common theme. Monies are scored for positive results. Hidden within the matrix are various Tokens which have differing effects upon the gameplay. Trivia Tokens for instance allow Players to double their money by wagering on their ability to successfully answer Trivia questions. After the last Round is played, there is a Bonus round. The Player with the most money after completion of the Bonus Round is declared the winner.</p>
+									  <p align="left">What follows is a highly detailed description of the workings of the game. 
+									  It is essentially a full blown game design 
+									  document outline. Please bear in mind that reading through all the rules 
+									  and details makes it appear more complicated than it really is. Golf is a very simple game... hit the ball and put it in the hole. But if you ever read the official rules, you might think it was too complicated to learn. 
+									  Diddly's gameplay is actually very intuitive and will soon become second nature to any player. We stress this point because the accessibility of 
+									  Diddly is an important factor to its fun, and ultimately to its success and popularity.</p>
+									  <div align="center">
+                                        <table border="0" width="50%" cols="1">
+                                          <tr>
+                                            <td><font size="2"><img src="pix/did_main-a.jpg" border="2" width="480" height="360" /><b><br />
+                                            </b><i>This illustration shows that it is Spaced Man's turn since his name and icon are highlighted and his icon is attached to the pointer cursor. These icons will also animate. He has accumulated two Vowel tokens and two Safety tokens. This illustration is not an accurate depiction of a true game state since the token icons would not remain on the main board in this fashion.</i></font></td>
+                                          </tr>
+                                        </table>
+								      </div>
+									  <h2 align="left">Pre Show</h2>
+									  <p><strong>Welcome and Introduction </strong>- The Hostess begins by introducing herself. <a href="#"><em onclick="openPictureWindow_Fever('undefined','samples/preshow_welcome00.jpg','640','480','Diddley - How to Play','','')">(illustration)</em></a></p>
+									  <p><strong>Number of Players</strong> - She then asks for the number of Players. The choices are 1, 2 or 3. <a href="#"><em onclick="openPictureWindow_Fever('undefined','samples/preshow_number_players.jpg','640','480','Diddley - How to Play','','')">(illustration)</em></a><em> (For special single player mode, see </em><a href="#Errata"><em>Errata</em></a><em>)</em></p>
+									  <p><strong>Full or Short Game</strong> - Players are asked if they wish to play a Full Game or a Short Game . A Full Game consists of 2 Puzzle Rounds and a Bonus Round. A Short Game consists of 1 Puzzle Round and a Bonus Round. <a href="#"><em onclick="openPictureWindow_Fever('undefined','samples/preshow_full-short.jpg','640','480','Diddley - How to Play','','')">(illustration)</em></a></p>
+									  <p><strong>Choose Character</strong> - Players are asked to choose a Character from a menu of Character icons. This will be the Player's onscreen identity. <a href="#"><em onclick="openPictureWindow_Fever('undefined','samples/preshow_chars.jpg','640','480','Diddley - How to Play','','')">(illustration)</em></a></p>
+									  <h1>Setup</h1>
+									  <p>At the beginning of each round, a Puzzle is randomly selected from a list of Puzzles that have not been previously played. The words that make up the Puzzle are then hidden behind the matrix of Red Tiles of the Puzzle Board. All the words are related to a common theme. Words may cross at common letters and will not touch unless they cross. A number of special Tokens are also hidden behind Red Tiles.</p>
+									  <p>In order to reduce the time it takes to play a round, several Blank Spaces are exposed initially. <em>(See </em><a href="#Errata"><em>Errata</em></a><em>)</em></p>
+									  <h2>Puzzle Clue</h2>
+									  <p>At the start of each Round there is a major Clue to the Puzzle's answer. This Puzzle Clue is not spelled out, but is instead indicated by underscore characters at the top of the screen. As letters are guessed from the Wheel, those letters appear in place of their underscore counterparts and the Clue is slowly revealed.</p>
+									  <h2>Menu Bar</h2>
+									  <p>All play options occur in the Menu Bar area below the Main Board.&nbsp;</p>
+									  <h2>Player Docket</h2>
+									  <p>Running vertically along the right side of the screen is the Player Docket. It is here that the Player's scores are displayed below their respective Character Icon. If a Player currently possesses Tokens, they are displayed here also. When it is a Player's turn, his Icon, Tokens and Score will be highlighted and/or animated, and at the same time those of his opponents are ghosted and static. (It may be possible to attach an animated Player Icon to the pointer cursor.)</p>
+									  <h2>Help Button</h2>
+									  <p>In the upper left hand corner of the screen is a red button that usually serves for labeling the current game segment. But it also serves as an onscreen Help Button. Clicking this button, or label, takes you to the general purpose Help screen. This screen contains access to Options, Controls and Rules. It also serves effectively as a Pause Game screen.</p>
+									  <p>The keyboard equivalent of the Help Button is the F1 key.<br />
+                                      </p>
+									  <div align="center">
+                                        <table border="0" width="50%" cols="1">
+                                          <tr>
+                                            <td><font size="2"><i><img src="pix/samp_help_pause.jpg" border="2" width="480" height="360" /><br />
+                                              This is the default Help/Pause screen. Selecting the red buttons on the seft side of the screen brings up the respective screens. </i></font><a href="samples/index.html" target="_blank"><font size="2"><i>Click here</i></font></a><font size="2"><i> for more Help screen samples.</i></font></td>
+                                          </tr>
+                                        </table>
+								      </div>
+									  <h1>Game Rules and Mechanics</h1>
+									  <p>Players alternate turns. During a turn, a Player may do any one of four possible actions when available. FLIP (reveal a tile), SPIN (spin the Wheel and then pick a letter), or ANSWER (solve the puzzle). The default state is to FLIP which a Player may do by pointing and clicking any Red Tile on the Board. The other options are selected from the Menu Bar, or by typing in the keyboard equivalent.&nbsp;</p>
+									  <h2>Flip</h2>
+									  <p>A Player reveals a space by selecting a tile that was previously unselected (Red Tile). What happens next depends on what was concealed behind the tile. If a Letter Space is revealed, indicated by a White Space or White/Yellow Lettered Space, then the Player may continue his/her/its turn. A Yellow Space indicates the intersection of words (if there is a guessed letter there). The Player scores points for exposing these Letter Spaces. <em>(See </em><a href="#Errata"><em>Errata</em></a><em>)</em></p>
+									  <p>If there was nothing concealed (a Blank), then the Player's turn is over. Otherwise, one of the following Tokens was revealed:</p>
+									  <p><b>Money Token</b> &#150; indicated by a flashing plus or minus sign. If it is a Plus Money Token, then the Wheel spins and that amount is added to the Player&rsquo;s score. If it is a Minus Money Token, the amount is subtracted from the Player&rsquo;s score. The amounts range from $1,000 to $5,000 for the Minus Tokens, and $5,000 to $10,000 for the Plus Tokens. In any one Round, there are five Plus and five Minus Money Tokens.</p>
+									  <p><b>Vowel Token</b> &#150; indicated by a round red token with the letter V on it. The Vowel Token is then stored below the Player's name. In any one Round, there are five Vowel Tokens that may be collected.</p>
+									  <p><b>Safety Token</b> - indicated by a round blue token with the letter S on it. The Safety Token is stored below the Player's name and below the Vowel Tokens, if any. If a player lands on an End Turn bar, the Safety Token is automatically used. In any one Round, there are five Safety Tokens that may be collected.</p>
+									  <p align="left"><b>Trivia Token</b> &#150; indicated by a question mark. When this token is exposed, the Player is given a multiple choice Trivia Question. In any one Round, there are five Trivia Tokens that may be found. <em>(See </em><a href="#Errata"><em>Errata</em></a><em>)</em></p>
+									  <p align="left"><strong>Steal Vowel Token</strong> - Automatically steals a Vowel Token from next Player. The Player's turn continues. If none of the other Players has a Vowel Token, there is no effect and the Player's turn ends. In any one Round, there are five Steal Vowel Tokens that may be collected.</p>
+									  <p align="left"><strong>Steal Safety Token</strong> - Automatically steals a Safety Token from next Player. The Player's turn continues. If none of the other Players has a Safety Token, there is no effect and the Player's turn ends. In any one Round, there are five Steal Safety Tokens that may be collected.</p>
+									  <h2 align="left"><font size="5">Trivia</font></h2>
+									  <p align="left">The Trivia presentation area appears in place of the Main Board. As in Jeopardy, the category is stated as a lead-in or hint to the question. There are a variety of trivial questions in text, audio and visual form.</p>
+									  <p align="left">The Category is given along with the trivia type (text, audio or visual, as indicated by the corresponding triva type graphic) and and the Player may then wager up to all the money he has earned for the Round. <a href="#"><em onclick="openPictureWindow_Fever('undefined','samples/trivia_visual_wager.jpg','640','480','Diddley - How to Play','','')">(illustration)</em></a></p>
+									  <p align="left">If the Player has less than $10,000 then he may wager up to $10,000. The Wager Bar is a gradated green bar with $0 at one end and the Player's total winning bet at the other. Player selects a point along bar to choose the amount of the wager rounded to the nearest $100. If the Player wagers $0, then his turn ends immediately.<br />
+                                      </p>
+									  <div align="center">
+                                        <table border="0" width="50%" cols="1">
+                                          <tr>
+                                            <td><font size="2"><img src="pix/samp_trivia_wager.jpg" border="2" width="480" height="72" /><br />
+                                                  <i>Shows wager of approximately $2,750,000.</i></font></td>
+                                          </tr>
+                                        </table>
+								      </div>
+									  <p align="left">Following the wager, the Trivia question and the possible answers are presented and the Player chooses an answer by clicking on it with the mouse, or typing in the answer number from the keyboard or numeric keypad. If the Player answers incorrectly, the amount wagered is subtracted from his total and his turn ends. If the answer is correct, the amount is added to his total and his turn continues.<br />
+                                          <font size="2">&nbsp; </font></p>
+									  <div align="center">
+                                        <table border="0" width="50%" cols="1">
+                                          <tr>
+                                            <td><p align="left"><font size="2"><img src="pix/samp_text_trivia.jpg" border="2" width="480" height="360" /><br />
+                                                      <i>This illustration shows a Text Trivia type. The graphic indicates which type it is - Text, Audio or Visual. </i></font><a href="samples/index.html" target="_blank"><font size="2"><i>Click here</i></font></a><font size="2"><i> for more Trivia screen samples.</i></font></p></td>
+                                          </tr>
+                                        </table>
+								      </div>
+									  <h2>Spin</h2>
+									  <p>When enough White tiles have been revealed, a Player should start to pick letters. Choosing the Spin option will cause the Wheel to appear in the Menu Bar area. It will automatically spin, the value bars rotating in like a slot machine, from right to left, slowing down until one bar stops in the highlighted selection slot.<br />
+                                          <font size="2">&nbsp; </font></p>
+									  <div align="center">
+                                        <table border="0" width="50%" cols="1">
+                                          <tr>
+                                            <td><font size="2"><img src="pix/samp_wheel.jpg" border="2" width="480" height="72" /><br />
+                                                  <i>Pointer over End Turn bar.</i></font></td>
+                                          </tr>
+                                        </table>
+								      </div>
+									  <p><b>Money Bars</b> &#150; indicated by a numerical value. The wheel is randomized at the start of the first spin.&nbsp; Bar values are as follows:<br />
+                                      </p>
+									  <ul>
+                                        <li>100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1500, 2000                                        </li>
+                                        <li>One Row Bar and two Column Bars                                        </li>
+                                        <li>There are no End Turn bars on Player's first spin. One End Turn bar is added after each successful spin, replacing prior Money bar.                                      </li>
+									  </ul>
+									  <p align="left">When a Money bar is landed on, the Alphabet Bar appears above the Wheel. Any letters that have been previously selected are ghosted. If the Player does not have a Vowel Token, the letters A, E, I, O, and U are also ghosted. The Player selects a letter by clicking on it with the cursor or by typing it from the keyboard. If there are any White Spaces containing the chosen letter, they are exposed at this time.<br />
+                                      </p>
+									  <div align="center">
+                                        <table border="0" width="50%" cols="1">
+                                          <tr>
+                                            <td><font size="2"><img src="pix/samp_pick_letter1.jpg" border="2" width="480" height="72" /></font>
+                                                <p><font size="3"><b><img src="pix/samp_pick_letter2.jpg" border="2" width="480" height="72" /><br />
+                                              </b></font><font size="2"><i>Players may select letters from the Menu Bar Alphabet list using the cursor, or by typing in the letter from the keyboard.&nbsp; As in Scrabble, each letter has a value which is inverse of its frequency of use, this value is used to calculate the score for a correctly guessed letter.&nbsp; Note that some letters of the alphabet are not displayed.&nbsp; This is because they have been previously guessed correctly.</i></font></p></td>
+                                          </tr>
+                                        </table>
+								      </div>
+									  <p>Each letter has its own point value.&nbsp; Letter values are as follows:<br />
+									    A = 1, B = 3, C = 3, D = 2, E = 1, F = 4, G =2, H = 4, I = 1, J = 8, K = 5, L = 1, M = 3, N = 1, O = 1, P = 3, Q = 8, R = 1, S =1, T =1, U = 1, V = 4, W = 4, X = 8, Y = 4, Z = 10</p>
+									  <p>When the cursor passes over a letter, its point value is displayed multiplied by the value of the money bar.</p>
+									  <p>Money is awarded to the Player in the following amounts:</p>
+									  <p>(letter value) x (bar money value) x (# of letters flipped)</p>
+									  <p>The above calculation should be displayed in the Menu Bar area when letters are exposed. For example: <b>8 x $800 x 2 = $12,800</b></p>
+									  <p>If a Space is yellow, then it indicates where two Puzzle Words cross and is accordingly worth double. If at least one letter is exposed, the Bar on the Wheel is then replaced by an End Turn bar and the Player's turn continues. If not, then the Player's turn comes to an end. Money Bars are returned to their original value at the beginning of each Player's turn. (The Wheel is dynamic. The more a Player keeps spinning the Wheel during a turn, the number of End Turn bars increases while the number of Money Bars decreases on the Wheel.)</p>
+									  <p><b>Row / Column</b> - There are bars labeled either Row or Column. When the Wheel falls on a Row bar, the Player may choose any space on any row of the matrix and the entire row will be exposed one tile at a time. Any tokens apply as usual. A column is exposed in the same manner when the Wheel falls on a Column bar. If a Trivia Token is exposed and the Player answers incorrectly, the row or column continues to be exposed, but when it is finished, the Player's turn is over.</p>
+									  <p><b>End Turn</b> &#150; If the Wheel lands on one of these bars, then the Player's turn comes to an end. If the Player has accumulated any Safety Tokens, one of them is automatically redeemed and Player's turn continues.&nbsp;</p>
+									  <h2>Answer</h2>
+									  <p>A Player chooses the Answer button when he believes he knows the answer to the Puzzle. The Menu Bar switches to Answer Puzzle input mode. The letters in the answer are indicated by underscores. Blank spaces indicate character spaces. These spaces are filled in as the Player types in his answer. The Player is not required to type in the spaces. In effect, the space key is disabled. Typing of answer is not case sensitive.<br />
+                                          <font size="2">&nbsp;</font></p>
+									  <div align="center">
+                                        <table border="0" width="50%" cols="1">
+                                          <tr>
+                                            <td><font size="2"><img src="pix/samp_answer.jpg" border="2" width="480" height="72" /></font><font size="3"><b><br />
+                                            </b></font><font size="2"><i>The Player has started to type out the answer to the puzzle. If a keyboard is unavailable, letters can be chosen from alphabet bar.</i></font></td>
+                                          </tr>
+                                        </table>
+								      </div>
+									  <p>If the Player answers correctly, the Player is declared the winner of the Round. If the Player's guess is incorrect, then he loses his turn (no matter what tokens he possesses).</p>
+									  <p>The solver of the puzzle wins a Jackpot of $50,000 which is added to his total score. The loser(s) keep their points and carry them over to the next round. After the last round, a Bonus Round is played to determine the overall winner.&nbsp;</p>
+									  <h2>Time Limits</h2>
+									  <p>There are reasonable time limits imposed for all phases of the game. The Host gently prompts the player as time begins to run out. The timing is not strict and varies within reasonable parameters. This is to give the feeling of an organic process or experience, much as a television gameshow gives a certain amount of discretion to the gameshow host.</p>
+									  <h1>Bonus Round</h1>
+									  <p>All Players participate. The Host announces the Category. One Word Space is revealed at a time and a Clue is given for that word. Starting with the Player with the highest score, each Player in turn tries to expose the entire word by choosing letters. If he chooses an incorrect letter, the turn passes to the next player. When a word is completed, the next Word Space is revealed. This continues until all the words have been completed.<br />
+                                      </p>
+									  <div align="center">
+                                        <table border="0" width="50%" cols="1">
+                                          <tr>
+                                            <td><font size="3"><b><img src="pix/samp_bonus_round.jpg" border="2" width="480" height="360" /><br />
+                                            </b></font><font size="2"><i>This illustrates the second word of a Bonus Round. The category is given at the bottom of the screen and the current Clue is given at the top of the screen.<br />
+											(The anser to this Clue is &quot;Howard&quot; 
+											as in &quot;Ron Howard&quot; who sang with a 
+											lisp in the movie version of The 
+											Music Man. He also directed the 
+											movie Splash.</i></font></td>
+                                          </tr>
+                                        </table>
+								      </div>
+									  <p>There are no Tokens in this phase of the game. A strict time limit is imposed for the selecting of letters. If a Player fails to select a letter, his score is diminished by 10% and distributed evenly to his opponent(s). The turn passes to the next Player. Points are scored for each letter guessed and for each word completed.<font size="3">&nbsp; </font></p>
+									  <h2>End Game</h2>
+									  <p>When the Bonus round is complete, the Winner is declared. The Players are then prompted as to whether they wish to play again or quit. <a href="#"><em onclick="openPictureWindow_Fever('undefined','samples/postshow_do_again.jpg','640','480','Diddley - How to Play','','')">(illustration)</em></a></p>
+									  <h1><a name="Errata" id="Errata"></a>
+									  Internal Notes</h1>
+									  <p><b>Screen Samples</b> - For an index of all screen samples, <i><a href="samples/index.html" target="_blank">click here</a></i>.</p>
+									  <p><strong>Banner Animations</strong> - Between Puzzle Rounds, Trivia Questions and Bonus Round, there are animations. <a href="samples/index.html" target="_blank"><i>Click here</i></a><i> for screen samples.</i></p>
+									  <p><strong>Screen Resolution</strong> - Resolution of the screen alwarys remains at 640x480.&nbsp; If the monitor is set to a higher resolution, the play screen is centered in a field of white.</p>
+									  <p><strong>Starting Blanks</strong> - In order to reduce the time it takes to play a Round, several Blank Spaces are exposed initially so that the number of non-letter spaces is equal to the number of Red Tiles on the Board. So if there were 70 letters in a Puzzle, for instance, the number of non-letter spaces would be 80. Therefore 10 Red Tiles would be exposed.</p>
+									  <p><strong>Trivia Token Distribution &amp; Frequency </strong>- A weakness regarding Trivia Tokens (and other tokens for that matter) lies in the fact that if the Players do not choose to Flip Red Tiles, the tokens will not come into effect during the game. This is especially unfortunate in regard to trivia, which is a fun and important factor of the gameplay. Therefore 
+									  Diddly requires a scheme that will allow Trivia Tokens to be uncovered evenly over the time span of the given Round.</p>
+									  <p>Here is one possible solution. Start a new Round by populating the board with 10 hidden trivia tokens and as more tiles are exposed, increase that number, perhaps adding one trivia token for every ten tiles that are exposed. (These numbers may need to be played with) This helps insure that Trivia Tokens will appear during the early, middle and late stages of the Round, counteracting the tendency of players to stop finding Trivia Tokens because they have slowed in their flipping of Red Tiles toward the end of the Round.</p>
+									  <p>Of course, when five Trivia Tokens have been revealed, the remaining Trivia Tokens are removed from the board.</p>
+									  <p>Another factor that helps this situation is the inclusion of an extra Column Bar on the Wheel so that more spaces are revealed during the later Spinning phase of the Round.</p>
+									  <p><strong>No More Moves</strong> - In the event that all the spaces on the Board are exposed and all the possible letters have been guessed, then starting with the Player who made the last play, each Player gets one chance to guess the answer to the Puzzle. If no one guesses, no one gets the Jackpot points and the game continues on to the next Round.</p>
+									  <p><strong>Time Limitations</strong> - A Player will have 10 - 13 seconds to make any given move during a normal Round (including Trivia). It is the intent, especially with the Host VO's, to be a little inexact so as to give it an organic, human feeling. Sometimes the Host might be more lenient than at other times. After about 8 seconds the Player will be given a warning or prompt. If the Player has not moved 4 or 5 seconds later, he is called for time and his turn passes to the next Player.</p>
+									  <p>The time limit is shorter (8 seconds) during the Bonus Round and is adhered to more strictly and exacting. There need not be any prompting. The music and ticking sound effect conveys the urgency.</p>
+									  <p><strong>Scoring</strong></p>
+									  <p><strong>Letter Spaces</strong> - The Player scores points for exposing Letter Spaces. Scoring is progressive. $100 for first Letter Space, $200 for second, etc. Amount is reset for Player's next turn.</p>
+									  <p><b>Single Player Mode</b></p>
+									  <p>In Single Player Mode, the player is allotted 25 incorrect guesses per Puzzle and per Bonus Round. An incorrect guess is defined by any action that would normally end a Player's turn in regualar multiplayer mode.</p>
+									  <p>The incorrect guesses are graphically displayed as a 5x5 grid of miniature red tiles in the Player Docket. <i><a href="#" onclick="openPictureWindow_Fever('undefined','samples/single_player1.jpg','640','480','Diddley - How to Play','','')">(illustration)</a></i> With each incorrect guess, a tile is removed from the grid. The game ends when all 25 tiles are removed.</p>
+							      </div>
+									<p>&nbsp;</p>
+							  <hr />
+									<div align="center"><!-- #BeginLibraryItem "/Library/footer.lbi" -->		<div align="center">
+			<p><font size="-1">This site is copyright of Trilobyte Games, LLC 
+			2008-2020</font></p>
+		</div>
+<!-- #EndLibraryItem --></div>							  </td>
+						  </tr>
+						</table>					</td>
+				</tr>
+			</table>
+			<p></p>
+		</div>
+	</body>
+</html>

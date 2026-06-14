@@ -1,0 +1,19 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+}
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+td {
+	font-size: 10px;
+}
+.dotted {
+border-bottom: 1px dotted #000
+}
+.border {
+border: solid 2px #789ea5
+}
+

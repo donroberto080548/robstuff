@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="0" xmlns = "http://xspf.org/ns/0/">
+<title>Point of View</title>
+  <trackList>
+   <track>
+    <location>media/pov/01.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Noir</annotation>
+   </track>
+   <track>
+    <location>media/pov/02.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Love Dogs</annotation>
+   </track>
+   <track>
+    <location>media/pov/03.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Space</annotation>
+   </track>
+   
+    <track>
+    <location>media/pov/04.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Imaginary Friend</annotation>
+   </track>
+   <track>
+    <location>media/pov/05.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Xpression</annotation>
+   </track>
+   <track>
+    <location>media/pov/06.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Chance</annotation>
+   </track>
+   
+    <track>
+    <location>media/pov/07.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>In The Shadows</annotation>
+   </track>
+   <track>
+    <location>media/pov/08.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Song For You</annotation>
+   </track>
+   <track>
+    <location>media/pov/09.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Freakshow</annotation>
+   </track>
+   <track>
+    <location>media/pov/10.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Perfect</annotation>
+   </track>
+   <track>
+    <location>media/pov/11.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Funny Places</annotation>
+   </track>
+   <track>
+    <location>media/pov/12.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>Relentless</annotation>
+   </track>
+   <track>
+    <location>media/pov/13.mp3</location>
+    <image>images/pov_icon.jpg</image>
+    <annotation>I Don't Know You</annotation>
+  
+  </trackList>
+</playlist>
+<xml>
+</xml>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ftp/
+Disallow: /rob/rob_toons/
+Disallow: /share/
